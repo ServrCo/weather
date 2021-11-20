@@ -67,21 +67,6 @@ a:hover {
     }
 }
 
-@keyframes blur-noblur {
-    from {
-        filter: brightness(1);
-        outline-style: solid;
-        outline-width: 4px;
-        outline-color: #111;
-    }
-    to {
-        filter: brightness(1.1);
-        outline-style: solid;
-        outline-width: 4px;
-        outline-color: #11a511;
-    }
-}
-
 .largeCenterText {
     position: relative;
     top: 125px;
@@ -109,16 +94,7 @@ iframe[seamless]{
     outline-width: 4px;
     outline-color: #111;
 }
-.labelImg:hover {
-    animation-duration: 0.5s;
-    animation-name: blur-noblur;
-    
-    filter:drop-shadow(0px 0px 2px #272727);
-    filter: brightness(1.1);
-    outline-style: solid;
-    outline-width: 4px;
-    outline-color: #11a511;
-}
+
 .notext {
     font-size: 0px !important;
 }
@@ -139,11 +115,15 @@ th, td {
     /* display: flexbox; */
     padding: 0; margin: 0;
 }
-/* img {
-    font-size: 0px; line-height: 0px;
-    padding: 0px; 
-} */
+
 table {
     font-size: 0px; line-height: 0px;
     padding: 0px;
+}
+
+.infoText {
+    display: block;
+    position: relative;
+    width: fit-content;
+    text-align: center;
 }

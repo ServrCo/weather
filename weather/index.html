@@ -3,6 +3,7 @@
     <head>
         <title>Servr Co Weather</title>
         <link rel="stylesheet" type="text/css" href="/res/global.css">
+        <link rel="stylesheet" type="text/css" href="/res/icons.css">
     </head>
     <body>
         <div class="topbanner text navbar-buttons">
@@ -13,9 +14,13 @@
         </div>
         
         <div class="infoBox" style="top: 50px !important">
-            <!-- <img alt="Cloud" src="/res/outline_wb_cloudy_black_24dp.png" class="labelImg"><p class="text largeCenterText" style="top:60px !important">temp.is</p> -->
-            <p class="text largeCenterText" style="top:60px !important;font-size: 30px !important;">temp.feelsLike</p>
-            <p class="text largeCenterText" style="top:60px !important;font-size: 30px !important;">temp.highlow</p>
+            <img alt="Cloud" src="/res/outline_wb_cloudy_black_24dp.png" class="currentWeatherImage"><p class="text largeCenterText" style="top:-10px !important;left: 45%;display:block !important;position:absolute !important;">temp.is</p>
+            <div class="text infoText" style="top:100px !important;font-size: 30px !important;width:auto !important">temp.feelsLike</div>
+            <div class="text infoText" style="top: 35px;left:35%;font-size: 20px !important;">cloud.cloudPercent</div>
+            <div class="text infoText" style="top:75px !important;font-size: 20px !important;width:auto !important">general.humidity</div>
+            <img alt="Wind" src="/res/outline_air_black_24dp.png" class="windIcon">
+            <div class="text infoText" style="top:calc(55% - 80px) !important;font-size: 20px !important;width:auto !important">wind.direction</div>
+            <div class="text infoText" style="top:calc(55% - 82px) !important;font-size: 20px !important;width:auto !important">wind.speeds</div>
         </div>
     
     </body>
