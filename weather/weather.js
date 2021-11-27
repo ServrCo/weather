@@ -1,4 +1,4 @@
-﻿const server_path = "http://weather.andrew.servrco.com/api/"
+﻿const server_path = "http://weather-api.servrco.com/api/"
 var location_name = "yakima"
 
 function directionFromDegrees(degrees) {
