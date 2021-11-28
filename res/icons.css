@@ -17,3 +17,23 @@
     top: 10px !important;
     position: absolute !important;
 }
+
+.primitive-rotating-loading-icon {
+    animation: primitive-rotating-animation 2s infinite linear;
+    left: 50%;
+    right: 50%;
+    top: 10%;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes primitive-rotating-animation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
+  

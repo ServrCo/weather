@@ -20,10 +20,10 @@ function directionFromDegrees(degrees) {
 }
 
 function update_weather() {
-	fetch(server_path + "getWeather?location=" + location_name)
+    fetch(server_path + "getWeather?location=" + location_name)
         .then(response => response.json())
-		.then(response => {
-			console.log(response)
+        .then(response => {
+            console.log(response)
             loc.fullName.innerText = location_name
             temp.is.innerText = Math.round(response.temp.temp) + "°F"
             temp.feelsLike.innerText = "Feels like: " + Math.round(response.temp.feels_like)+ "°F"
@@ -33,7 +33,11 @@ function update_weather() {
             wind.speeds.innerText = "Speed: " + Math.round(response.wind.speed) + " MPH"
         
             general.datetime.innerText = "12:34"
-		})
+            document.getElementById("loadCover").remove()
+        }).catch(() => {
+            console.log("error")
+            document.getElementById("loadCover").innerHTML = "<h1>Error loading data. Please retry later.</h1>"
+        })
 }
 
 update_weather()
