@@ -1,37 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Servr Co Weather</title>
-        <link rel="stylesheet" type="text/css" href="/res/global.css">
-        <link rel="stylesheet" type="text/css" href="/res/icons.css">
-        <meta name="viewport" content="width=device-width, initial-scale=0.75">
-    </head>
-    <body>
-        <div id="loadCover" style="width: 100%;height: 100%;z-index: 100;background-color: #fff;position: fixed;left: 0;top: 0;display: block;">
-            <!--Loading page animated image-->
-            <img src="/res/outline_autorenew_black_24dp.png" preload alt="loading-image" class="primitive-rotating-loading-icon">
-            <div class="text largeCenterText">Fetching the weather</div>
-        </div>
-
-        <div class="topbanner text navbar-buttons">
-            <div style="width:20px;height:10px;"></div>
-            <img src="/res/placeholder.png" alt="Logo" style="width:200px !important;left: 15px !important;top: 0px !important;position: absolute;">
-        <div class="text navbar-text" style="font-size: 30px !important" id="loc.fullName">loc.fullName</div>
-        <div class="text datetime" id="general.datetime">general.datetime</div>
-        </div>
-        </div>
-        
-        <div class="infoBox" style="top: 50px !important">
-            <img alt="Cloud" src="/res/outline_wb_cloudy_black_24dp.png" class="currentWeatherImage"><p class="text largeCenterText" style="top:-10px !important;left: 45%;display:block !important;position:absolute !important;" id="temp.is">temp.is</p>
-            <div class="text infoText" style="top:100px !important;font-size: 30px !important;width:auto !important" id="temp.feelsLike">temp.feelsLike</div>
-            <div class="text infoText" style="top: 35px;left:35%;font-size: 20px !important;" id="cloud.cloudPercent">cloud.cloudPercent</div>
-            <div class="text infoText" style="top:75px !important;font-size: 20px !important;width:auto !important" id="humidity.humidity">humidity.humidity</div>
-            <img alt="Wind" src="/res/outline_air_black_24dp.png" class="windIcon">
-            <div class="text infoText" style="top:calc(55% - 80px) !important;font-size: 20px !important;width:auto !important" id="wind.direction">wind.direction</div>
-            <div class="text infoText" style="top:calc(55% - 82px) !important;font-size: 20px !important;width:auto !important" id="wind.speeds">wind.speeds</div>
-        </div>
-    
-    </body>
-    <script src="slots.js"></script>
-    <script src="weather.js"></script>
-</html>
+<!DOCTYPE html><html lang="en">  <head>    <meta http-equiv="content-type" content="text/html; charset=windows-1252">    <title>Servr Co Weather</title>    <link rel="stylesheet" type="text/css" href="../res/global.css">    <link rel="stylesheet" type="text/css" href="../res/icons.css">    <meta name="viewport" content="width=device-width, initial-scale=0.75">  </head>  <body>    <div id="loadCover" style="width: 100%; height: 100%; z-index: 100; background-color: white; position: fixed; left: 0px; top: 0px; display: block;">      <!--Loading page animated image--> <img src="/res/outline_autorenew_black_24dp.png"        preload=""        alt="loading-image"        class="primitive-rotating-loading-icon">      <div class="text largeCenterText">Fetching the weather</div>    </div>    <div class="topbanner text navbar-buttons">      <div style="width:20px;height:10px;"></div>      <img src="/res/placeholder.png" alt="Logo" style="width:200px !important;left: 15px !important;top: 0px !important;position: absolute;">      <div class="text navbar-text" style="font-size: 30px !important" id="loc.fullName">loc.fullName</div>      <div class="text datetime" id="general.datetime">general.datetime</div>    </div>    <div class="infoBox" style="top: 50px !important"> <img alt="Cloud" src="/res/outline_wb_cloudy_black_24dp.png"        class="currentWeatherImage">      <p class="text largeCenterText" style="top:-10px !important;left: 45%;display:block !important;position:absolute !important;"        id="temp.is">temp.is</p>      <div class="text infoText" style="top:100px !important;font-size: 30px !important;width:auto !important"        id="temp.feelsLike">temp.feelsLike</div>      <div class="text infoText" style="top: 35px;left:35%;font-size: 20px !important;"        id="cloud.cloudPercent">cloud.cloudPercent</div>      <div class="text infoText" style="top:75px !important;font-size: 20px !important;width:auto !important"        id="humidity.humidity">humidity.humidity</div>      <img alt="Wind" src="/res/outline_air_black_24dp.png" class="windIcon">      <div class="text infoText" style="top:calc(55% - 80px) !important;font-size: 20px !important;width:auto !important"        id="wind.direction">wind.direction</div>      <div class="text infoText" style="top:calc(55% - 82px) !important;font-size: 20px !important;width:auto !important"        id="wind.speeds">wind.speeds</div>    </div>    <script src="slots.js"></script>    <script src="weather.js"></script>  </body></html>
