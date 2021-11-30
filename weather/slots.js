@@ -55,6 +55,4 @@ function testValues() {
     humidity.humidity.innerText = "Humidity: 54%"
     wind.direction.innerText = "Direction: N"
     wind.speeds.innerText = "Speed: 5 MPH"
-
-    general.datetime.innerText = "12:34"
 }

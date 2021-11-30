@@ -31,8 +31,7 @@ function update_weather() {
             humidity.humidity.innerText = "Humidity: " + response.humid + "%"
             wind.direction.innerText = "Direction: " + directionFromDegrees(response.wind.deg)
             wind.speeds.innerText = "Speed: " + Math.round(response.wind.speed) + " MPH"
-        
-            general.datetime.innerText = "12:34"
+            
             document.getElementById("loadCover").remove()
         }).catch(() => {
             console.log("error")
