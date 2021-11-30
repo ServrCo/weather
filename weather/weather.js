@@ -1,4 +1,4 @@
-﻿const server_path = "http://weather.andrew.servrco.com/api/" // BE SURE TO CHANGE THIS BEFORE PUSHING TO PROD
+﻿const server_path = "https://weather.servrco.com/api/" // BE SURE TO CHANGE THIS BEFORE PUSHING TO PROD
 var location_name = "yakima"
 
 function directionFromDegrees(degrees) {
