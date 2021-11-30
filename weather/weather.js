@@ -1,4 +1,4 @@
-﻿const server_path = "http://weather.andrew.servrco.com/api/"
+﻿const server_path = "http://weather-api.servrco.com/api/"
 var location_name = "yakima"
 
 function directionFromDegrees(degrees) {
@@ -31,7 +31,7 @@ function update_weather() {
             humidity.humidity.innerText = "Humidity: " + response.humid + "%"
             wind.direction.innerText = "Direction: " + directionFromDegrees(response.wind.deg)
             wind.speeds.innerText = "Speed: " + Math.round(response.wind.speed) + " MPH"
-            
+
             document.getElementById("loadCover").remove()
         }).catch(() => {
             console.log("error")
