@@ -23,6 +23,7 @@
     top: 0px !important;
     width: 100%;
     height: 50px;
+    box-shadow: 2px 1px 8px #bbb;
 }
 
 .navbar-buttons {
