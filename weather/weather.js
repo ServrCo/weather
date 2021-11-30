@@ -1,10 +1,14 @@
-﻿const server_path = "https://weather.servrco.com/api/" // BE SURE TO CHANGE THIS BEFORE PUSHING TO PROD
+const server_path = "https://weather-api.servrco.com/api/" // BE SURE TO CHANGE THIS BEFORE PUSHING TO PROD
 var location_name = "yakima"
 
-function directionFromDegrees(degrees) {
+function directionFromDegrees(degrees, speed) {
     if (degrees >= 0 && degrees <= 90) {
-        return "N"
-    }
+		if (speed > 0){
+			return "N"
+		}else{
+			return "N/A"
+		}
+	}
 
     if (degrees >= 91 && degrees <= 180) {
         return "E"
@@ -29,7 +33,7 @@ function update_weather() {
             temp.feelsLike.innerText = "Feels like: " + Math.round(response.temp.feels_like)+ "°F"
             cloud.cloudPercent.innerText = response.cloud + "%"
             humidity.humidity.innerText = "Humidity: " + response.humid + "%"
-            wind.direction.innerText = "Direction: " + directionFromDegrees(response.wind.deg)
+            wind.direction.innerText = "Direction: " + directionFromDegrees(response.wind.deg, response.wind.speed)
             wind.speeds.innerText = "Speed: " + Math.round(response.wind.speed) + " MPH"
 
             document.getElementById("loadCover").remove()
