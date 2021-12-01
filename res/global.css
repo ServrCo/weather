@@ -33,6 +33,12 @@
     top: 9px;
 }
 
+.navbar-datetime{
+    position: absolute;
+    display: block;
+    right: 3%;
+    top: 63%;
+
 .navbar-text {
     position: relative;
     /* text-align: center !important; */
