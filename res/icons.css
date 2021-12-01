@@ -1,12 +1,12 @@
 .currentWeatherImage {
     position: absolute;
-    left: 35%;
+    left: 10px;
     top: 10%;
 }
 
 .windIcon {
     position: absolute;
-    left: 35%;
+    left: 10px;
     top: 55%;
 }
 

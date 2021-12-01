@@ -45,6 +45,7 @@
     /* text-align: center !important; */
     font-size: 30px !important;
     left: 225px;
+    width: fit-content;
 }
 
 a {
@@ -73,18 +74,17 @@ body {
     }
 }
 
+.largeText {
+    position: relative;
+    top: 125px;
+    font-size: 40px !important;
+}
+
 .largeCenterText {
     position: relative;
     top: 125px;
     text-align: center !important;
     font-size: 40px !important;
-}
-
-iframe[seamless]{
-    background-color: transparent;
-    border: 0px none transparent;
-    padding: 0px;
-    overflow: hidden;
 }
 
 .headerImg {
@@ -131,5 +131,6 @@ table {
     display: block;
     position: relative;
     width: fit-content;
-    text-align: center;
+    text-align: left;
+    left: 10px;
 }
