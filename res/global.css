@@ -107,12 +107,12 @@ iframe[seamless]{
 
 .infoBox {
     background-color: #ffffff;
-    width: 65%;
-    height: 300px;
+    width: 70%;
+    height: 360px;
     position: relative;
     margin-left: 20px;
     margin-right: auto;
-    box-shadow:5px 5px 7px #bbb;
+    box-shadow:5px 5px 6px #bbb;
 }
 
 th, td {
