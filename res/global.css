@@ -28,8 +28,9 @@
 
 .navbar-buttons {
     position: absolute;
+    display: block;
     right: 3%;
-    top: 55px;
+    top: 9px;
 }
 
 .navbar-text {
